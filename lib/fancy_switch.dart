@@ -1,4 +1,5 @@
 import 'package:fancy_switch/widget/background.dart';
+import 'package:fancy_switch/widget/cloud.dart';
 import 'package:fancy_switch/widget/knob.dart';
 import 'package:flutter/material.dart';
 
@@ -64,6 +65,7 @@ class _FancySwitchState extends State<FancySwitch>
           child: Background(
             animation: curvedAnimation,
             child: Stack(children: [
+              Cloud(animation: curvedAnimation),
               Knob(animation: curvedAnimation),
             ]),
           ),
