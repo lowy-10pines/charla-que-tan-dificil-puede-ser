@@ -1,6 +1,7 @@
 import 'package:fancy_switch/widget/background.dart';
 import 'package:fancy_switch/widget/cloud.dart';
 import 'package:fancy_switch/widget/knob.dart';
+import 'package:fancy_switch/widget/stars.dart';
 import 'package:flutter/material.dart';
 
 class FancySwitch extends StatefulWidget {
@@ -66,6 +67,7 @@ class _FancySwitchState extends State<FancySwitch>
             animation: curvedAnimation,
             child: Stack(children: [
               Cloud(animation: curvedAnimation),
+              Stars(animation: curvedAnimation),
               Knob(animation: curvedAnimation),
             ]),
           ),
