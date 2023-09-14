@@ -1,4 +1,5 @@
 import 'package:fancy_switch/widget/background.dart';
+import 'package:fancy_switch/widget/knob.dart';
 import 'package:flutter/material.dart';
 
 class FancySwitch extends StatefulWidget {
@@ -15,7 +16,7 @@ class _FancySwitchState extends State<FancySwitch>
     with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
     vsync: this,
-    duration: const Duration(milliseconds: 500),
+    duration: const Duration(milliseconds: 200),
   );
 
   Animation<double> get curvedAnimation => CurvedAnimation(
@@ -62,7 +63,9 @@ class _FancySwitchState extends State<FancySwitch>
           },
           child: Background(
             animation: curvedAnimation,
-            child: Stack(children: []),
+            child: Stack(children: [
+              Knob(animation: curvedAnimation),
+            ]),
           ),
         ),
       ),
