@@ -1,3 +1,4 @@
+import 'package:fancy_switch/widget/background.dart';
 import 'package:flutter/material.dart';
 
 class FancySwitch extends StatefulWidget {
@@ -59,7 +60,10 @@ class _FancySwitchState extends State<FancySwitch>
           onTap: () {
             widget.onChanged.call(!widget.value);
           },
-          child: ColoredBox(color: Colors.amber),
+          child: Background(
+            animation: curvedAnimation,
+            child: Stack(children: []),
+          ),
         ),
       ),
     );
