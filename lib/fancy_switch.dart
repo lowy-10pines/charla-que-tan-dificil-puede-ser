@@ -63,6 +63,20 @@ class _FancySwitchState extends State<FancySwitch>
           onTap: () {
             widget.onChanged.call(!widget.value);
           },
+          onPanUpdate: (details) {
+            final recorrido = details.delta.dx;
+            const espacio = 50 - 30; // Width - Height del widget
+            _controller.value += recorrido / espacio;
+          },
+          onPanEnd: (details) {
+            if (_controller.value < 0.5) {
+              _controller.reverse(from: _controller.value);
+              widget.onChanged.call(false);
+            } else {
+              _controller.forward(from: _controller.value);
+              widget.onChanged.call(true);
+            }
+          },
           child: Background(
             animation: curvedAnimation,
             child: Stack(children: [
