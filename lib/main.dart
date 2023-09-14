@@ -1,3 +1,4 @@
+import 'package:fancy_switch/fancy_switch.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class _FancySwitchAppState extends State<FancySwitchApp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Switch.adaptive(value: value, onChanged: _setValue),
-                const SizedBox(width: 50, height: 30, child: Placeholder())
+                FancySwitch(value: value, onChanged: _setValue),
               ],
             ),
           ),
