@@ -1,3 +1,4 @@
+import 'package:fancy_switch/painting/moon_border.dart';
 import 'package:flutter/material.dart';
 
 class Knob extends StatelessWidget {
@@ -10,7 +11,7 @@ class Knob extends StatelessWidget {
   DecorationTween get decorationsTween => DecorationTween(
         begin: const ShapeDecoration(
           color: Colors.white,
-          shape: CircleBorder(),
+          shape: MoonBorder(),
           shadows: <BoxShadow>[
             BoxShadow(color: Colors.grey, blurRadius: 10.0, spreadRadius: 3.0),
           ],
