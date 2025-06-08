@@ -9,17 +9,17 @@ class Knob extends StatelessWidget {
   });
 
   DecorationTween get decorationsTween => DecorationTween(
-        begin: const ShapeDecoration(
-          color: Colors.white,
-          shape: MoonBorder(),
-          shadows: <BoxShadow>[
+        begin: ShapeDecoration(
+          color: Colors.yellow.shade50,
+          shape: const MoonBorder(),
+          shadows: const <BoxShadow>[
             BoxShadow(color: Colors.grey, blurRadius: 10.0, spreadRadius: 3.0),
           ],
         ),
-        end: const ShapeDecoration(
-          color: Colors.yellow,
-          shape: CircleBorder(),
-          shadows: <BoxShadow>[
+        end: ShapeDecoration(
+          color: Colors.yellow.shade400,
+          shape: const CircleBorder(),
+          shadows: const <BoxShadow>[
             BoxShadow(color: Colors.orange, blurRadius: 5.0, spreadRadius: 1.0),
           ],
         ),

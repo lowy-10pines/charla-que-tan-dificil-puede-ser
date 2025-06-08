@@ -7,7 +7,7 @@ class Background extends StatelessWidget {
 
   DecorationTween get backgroundAnimationTween => DecorationTween(
         begin: const BoxDecoration(color: Color(0xFF050357)),
-        end: const BoxDecoration(color: Color(0xFFB3E5FC)),
+        end: BoxDecoration(color: Colors.blue.shade300),
       );
 
   @override

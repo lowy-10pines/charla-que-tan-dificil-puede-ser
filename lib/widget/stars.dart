@@ -47,12 +47,12 @@ class _Star extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox.square(
+    return SizedBox.square(
       dimension: 6,
       child: DecoratedBox(
         decoration: ShapeDecoration(
-          shape: StarBorder(),
-          color: Colors.white,
+          shape: const StarBorder(),
+          color: Colors.yellow.shade200,
         ),
       ),
     );

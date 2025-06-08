@@ -36,7 +36,7 @@ class CloudPainter extends CustomPainter {
     final dy = size.height / 3;
 
     final paint = Paint()
-      ..color = Colors.white
+      ..color = Colors.lightBlue.shade50
       ..style = PaintingStyle.fill;
 
     // Large circle
