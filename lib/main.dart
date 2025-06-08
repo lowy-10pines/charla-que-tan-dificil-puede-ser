@@ -28,12 +28,12 @@ class _FancySwitchAppState extends State<FancySwitchApp> {
       title: 'Fancy Switch demo',
       themeMode: value ? ThemeMode.light : ThemeMode.dark,
       darkTheme: ThemeData.dark(useMaterial3: true).copyWith(
-          colorScheme: ColorScheme.dark(
+          colorScheme: const ColorScheme.dark(
         primary: Color.fromARGB(255, 164, 0, 255),
         secondary: Color.fromARGB(255, 251, 40, 104),
       )),
       theme: ThemeData.light(useMaterial3: true).copyWith(
-          colorScheme: ColorScheme.light(
+          colorScheme: const ColorScheme.light(
         primary: Color.fromARGB(255, 113, 255, 92),
         secondary: Color.fromARGB(255, 57, 255, 233),
       )),

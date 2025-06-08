@@ -28,7 +28,7 @@ class _FlairState extends State<Flair> with TickerProviderStateMixin {
           colors: [
             theme.colorScheme.primary,
             theme.colorScheme.secondary,
-            theme.colorScheme.background,
+            theme.colorScheme.surface,
           ],
         )),
         end: BoxDecoration(
@@ -36,7 +36,7 @@ class _FlairState extends State<Flair> with TickerProviderStateMixin {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            theme.colorScheme.background,
+            theme.colorScheme.surface,
             theme.colorScheme.primary,
             theme.colorScheme.secondary,
           ],
@@ -47,12 +47,12 @@ class _FlairState extends State<Flair> with TickerProviderStateMixin {
         begin: ShapeDecoration(
           shape: const FlairBorder(
               amplitude: FlairBorder.maxAmplitude, phase: FlairBorder.minPhase),
-          color: theme.colorScheme.background,
+          color: theme.colorScheme.surface,
         ),
         end: ShapeDecoration(
           shape: const FlairBorder(
               amplitude: FlairBorder.minAmplitude, phase: FlairBorder.maxPhase),
-          color: theme.colorScheme.background,
+          color: theme.colorScheme.surface,
         ),
       );
 
